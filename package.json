@@ -1,0 +1,19 @@
+{
+  "name": "wtf-tracing",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "DD_SERVICE=wtf-tracing node --require dd-trace/init index.js",
+    "remote": "DD_SERVICE=wtf-remote node --require dd-trace/init remoteService.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "dd-trace": "^1.3.0",
+    "express": "^4.17.1"
+  }
+}
