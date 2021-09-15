@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "DD_SERVICE=wtf-tracing node --require dd-trace/init index.js",
-    "remote": "DD_SERVICE=wtf-remote node --require dd-trace/init remoteService.js",
+    "start": "DD_ENV=sandbox DD_SERVICE=wtf-tracing node --require dd-trace/init index.js",
+    "remote": "DD_ENV=sandbox DD_SERVICE=wtf-remote node --require dd-trace/init remoteService.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
